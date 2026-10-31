@@ -107,3 +107,18 @@ Because unelevated runs commands with the same permissions as your Windows login
 
 - Any script the model executes can read and modify files in your user folder.
 - **Built-in Protection:** Notice the **Ask for approval** toggle (the hand icon ✋) at the bottom left of your composer. Keep this enabled so Codex prompts for confirmation before running terminal commands or modifying files.
+
+
+### HauhauCS/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive:Q6_K
+
+```
+llama serve -hf HauhauCS/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive:Q6_K `
+    --alias qwen3.5-2b-uncensored `
+    --jinja `
+    --no-mmproj `
+    -c 32768 `
+    --cache-type-k q8_0 `
+    --cache-type-v q8_0 `
+    -fa on `
+    --port 9931
+```
